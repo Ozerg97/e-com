@@ -1,0 +1,5 @@
+npm install react-redux redux-persist redux react-router-dom redux-thunk axios react-bootstrap bootstrap bootstrap-icons
+npm install @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+
+npm install -D tailwindcss
+npx tailwindcss init
