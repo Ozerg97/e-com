@@ -1,11 +1,8 @@
-import { version} from 'mongoose';
-
-import { combineReducers, createStore } from 'redux';
- 
+import { combineReducers, createStore, applyMiddleware } from 'redux';
 import storage from 'redux-persist/lib/storage';
 import  { persistStore, persistReducer } from 'redux-persist';
-import { ProductListReducer, ProductReducer } from './Reducers/Products';
-
+import { productListReducer, productReducer } from './Reducers/Products';
+import {thunk} from 'redux-thunk';
 
 const persistConfig = {
     key: 'root',
@@ -14,12 +11,13 @@ const persistConfig = {
 }
 const rootReducer = combineReducers({
     // add reducers here
-    ProductListReducer,
-    ProductReducer
+    productListReducer,
+    productReducer
 })
+
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
-export default = createStore(persistedReducer);
 
-export let persistor = persistStore(store);
+export const store = createStore(persistedReducer, applyMiddleware(thunk));
+export const persistor = persistStore(store);

@@ -7,7 +7,7 @@ const databaseSeeder = require("./databaseSeeder");
 const userRoute = require("./routes/User");
 const productRoute = require("./routes/Product");
 const orderRoute = require("./routes/Order");
-const products = require("./data/Product");
+
 const PORT = process.env.PORT;
 const cors = require("cors");
 const mongoose = require("mongoose");

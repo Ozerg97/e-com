@@ -1,9 +1,10 @@
-import './css/Products.css';
 
-import Product from '../Components/Product'; 
+
+import Product from '../Components/Products'; 
 function Products() {
     return (
         <>
+
         <Product/>
             
 
