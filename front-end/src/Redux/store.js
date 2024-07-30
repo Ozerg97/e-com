@@ -4,6 +4,7 @@ import  { persistStore, persistReducer } from 'redux-persist';
 import { productListReducer, productReducer } from './Reducers/Products';
 import {thunk} from 'redux-thunk';
 import { userLoginReducer, userRegisterReducer } from './Reducers/User';
+import { cartReducer } from './Reducers/Cart';
 
 const persistConfig = {
     key: 'root',
@@ -15,7 +16,8 @@ const rootReducer = combineReducers({
     productListReducer,
     productReducer,
     userLoginReducer,
-    userRegisterReducer
+    userRegisterReducer,
+    cartReducer
 })
 
 

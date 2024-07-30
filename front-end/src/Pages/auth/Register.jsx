@@ -33,6 +33,7 @@ function Register() {
         <div className="flex items-center justify-center min-h-screen bg-gray-50">
           <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
             <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
+            
             <form onSubmit={submitHandler}>
               <div className="mb-5">
                 <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900">Name</label>

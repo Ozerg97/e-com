@@ -6,6 +6,7 @@ import ProductDetails from './Pages/ProductDetails';
 import Login from './Pages/auth/Login';
 import Register from './Pages/auth/Register';
 import { useSelector } from 'react-redux';
+import Checkout from './Pages/Checkout';
 
 
 function App() {
@@ -20,15 +21,15 @@ function App() {
 
           <Route element={<Layout />}>
 
-            <Route exact path="/" element={<Homepage />} />
-            <Route exact path='/login' element={userInfo ? <Navigate to="/"/> : <Login />} />
-            <Route exact path='/register' element={userInfo ? <Navigate to="/"/> : <Register /> } />
-
-            <Route exact path="/shop" element={<Products />} />
-            <Route exact path="/product/:id" element={<ProductDetails />} />
-
+            <Route path="/" element={<Homepage />} />
+            <Route path='/login' element={userInfo ? <Navigate to="/"/> : <Login />} />
+            <Route path='/register' element={userInfo ? <Navigate to="/"/> : <Register /> } />
+            
+            <Route path="/shop" element={<Products />} />
+            <Route path="/product/:id" element={<ProductDetails />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Route>
-
+          {/* <Route path='/cart' element={<Cart /> } /> */}
 
 
 

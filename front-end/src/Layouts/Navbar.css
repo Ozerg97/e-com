@@ -1,3 +1,4 @@
+
 nav {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
@@ -52,7 +53,7 @@ nav li:first-child {
   margin-right: auto;
 }
 
-.user-icon-container {
+.user-icon-container1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,11 +61,22 @@ nav li:first-child {
   border: none;
   padding: 0;
   cursor: pointer;
+  margin-right: 40px;
 }
 
-.user-icon-container:hover svg {
+.user-icon-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.user-icon-container1:hover svg,
+.user-icon-container2:hover svg,
+.shop-icon:hover svg {
   fill: #4CAF50;
 }
+
 
 .sidebar {
   position: fixed;
