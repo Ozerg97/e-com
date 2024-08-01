@@ -51,7 +51,7 @@ export const userLogoutAction = () => async (dispatch) => {
 }
 
 
-//registrer 
+//register 
 
 export const userRegisterAction = (name, email, password) => async (dispatch) => {
     try {

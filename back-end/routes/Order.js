@@ -65,16 +65,16 @@ orderRoute.put(
 
 // get all orders
 orderRoute.get(
-  "/:id",
+  "/",
   protect,
   asyncHandler(async (req, res) => {
+
     const orders = await Order.find({ user: req.user._id }).sort({ _id: -1 });
-    if(orders){
+    if (orders) {
       res.status(200).json(orders);
-    }
-    else{
+    } else {
       res.status(404);
-      throw new Error("No orders found");
+      throw new Error("Orders Not Found");
     }
   })
 );

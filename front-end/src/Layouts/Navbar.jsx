@@ -112,7 +112,7 @@ const NavBar = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item as={Link} to="/Profile">Profile</Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/order-history">Order History</Dropdown.Item>
                   <Dropdown.Item as={Link} to="/Settings">Settings</Dropdown.Item>
                   <Dropdown.Item onClick={logoutHandler} >Logout</Dropdown.Item>
                 </Dropdown.Menu>
@@ -171,7 +171,7 @@ const NavBar = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item as={Link} to="/Profile">Profile</Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/order-history">Order History</Dropdown.Item>
                   <Dropdown.Item as={Link} to="/Settings">Settings</Dropdown.Item>
                   <Dropdown.Item onClick={logoutHandler}>Logout</Dropdown.Item>
                 </Dropdown.Menu>

@@ -43,6 +43,11 @@
     margin-bottom: 0px;
 }
 
+.commitment-section h2 {
+    font-size: 2.0rem; /* Taille du titre */
+    color: #333; /* Couleur du texte */
+    margin-bottom: 10px; /* Espacement sous le titre */
+}
 .slide-content {
     width: auto;
     /* Ensure content does not stretch too wide */

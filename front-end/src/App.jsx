@@ -7,6 +7,7 @@ import Login from './Pages/auth/Login';
 import Register from './Pages/auth/Register';
 import { useSelector } from 'react-redux';
 import Checkout from './Pages/Checkout';
+import OrderHistory from './Pages/OrderHistory';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/shop" element={<Products />} />
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/order-history" element={<OrderHistory />} />
           </Route>
           {/* <Route path='/cart' element={<Cart /> } /> */}
 

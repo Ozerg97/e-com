@@ -11,18 +11,19 @@ import { Link } from 'react-router-dom';
 
 export default function Cart({ open, setOpen }) {
 
-  const dispatch = useDispatch();
-  const cart = useSelector((state) => state.cartReducer);
-  const { cartItems } = cart;
 
+
+
+  const dispatch = useDispatch();
   const removeFromCartHandler = (id) => {
     dispatch(removeFromCartAction(id));
   }
-
   const addToCartHandler = (id, qty) => {
     dispatch(addToCartAction(id, qty));
   }
 
+  const cart = useSelector((state) => state.cartReducer);
+  const { cartItems } = cart;
   const total = cartItems.reduce((total, item) => total + item.qty * item.price, 0).toFixed(2);
 
 

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <>
+    
       
       <section id="welcome">
       <div className="welcome-content">
@@ -145,7 +145,7 @@ function Home() {
       </div>
     </section>
       
-    </>
+    
   );
 }
 
