@@ -16,7 +16,7 @@ const Checkout = () => {
     const userLoginReducer = useSelector((state) => state.userLoginReducer);
     const { userInfo } = userLoginReducer;
 
-    const [email, setEmail] = useState(userInfo );
+    const [email, setEmail] = useState(userInfo.email);
     const [firstName, setFirstName] = useState(shippingAddress.firstName);
     const [lastName, setLastName] = useState(shippingAddress.lastName);
     const [appartment, setAppartment] = useState(shippingAddress.appartment);
