@@ -72,7 +72,7 @@ const NavBar = () => {
           </svg>
 
         </li>
-        <div>
+        {/* <div>
           <Form className="d-flex">
             <Form.Control
               type="search"
@@ -82,7 +82,7 @@ const NavBar = () => {
             />
             <Button variant="outline-success">Search</Button>
           </Form>
-        </div>
+        </div> */}
         <li>
           <Link to="/" className="nav-link">Accueil</Link>
         </li>
@@ -130,7 +130,7 @@ const NavBar = () => {
             <img src={logo} alt="Logo" />
           </Link>
         </li>
-        <div className="hideOnMobile">
+        {/* <div className="hideOnMobile">
           <Form className="d-flex">
             <Form.Control
               type="search"
@@ -140,7 +140,7 @@ const NavBar = () => {
             />
             <Button variant="outline-success">Search</Button>
           </Form>
-        </div>
+        </div> */}
         <li className="hideOnMobile">
           <Link to="/" className="nav-link">Accueil</Link>
         </li>

@@ -4,9 +4,7 @@ import Confetti from "react-confetti";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { orderDetailAction } from "../Redux/Actions/Order";
-// import { useParams } from "react-router-dom";
-// import { useDispatch, useSelector } from "react-redux";
-// import { orderDetailAction } from "../Redux/Actions/Order";
+
 
 
 const OrderConfirmation = () => {

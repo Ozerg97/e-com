@@ -20,7 +20,7 @@ mongoose
   .then(() => console.log("DB connected"))
   .then((err) => console.log(err));
 
-app.use(express.json());
+app.use(express.json()); 
 
 
 app.use(cors());

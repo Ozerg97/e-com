@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -15,22 +16,22 @@ function Footer() {
                 <div className="footer-section">
                     <h4>Navigation</h4>
                     <ul>
-                        <li><a href="/">Accueil</a></li>
-                        <li><a href="/boutique">Boutique</a></li>
-                        <li><a href="/promotions">Promotions</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/faq">FAQ</a></li>
+                        <li><Link to="/">Accueil</Link></li>
+                        <li><Link to="/shop">Boutique</Link></li>
+                        <li><Link to="/faq">FAQ</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
                 <div className="footer-section">
                     <h4>Service client</h4>
                     <ul>
-                        <li><a href="/aide">Centre d'aide</a></li>
-                        <li><a href="/retours">Politique de retour</a></li>
-                        <li><a href="/remboursements">Politique de remboursement</a></li>
-                        <li><a href="/cgv">Conditions générales de vente</a></li>
-                        <li><a href="/confidentialite">Politique de confidentialité</a></li>
-                        <li><a href="/suivi">Suivi de commande</a></li>
+                       
+                        
+                        <li><Link to="/refund-policy">Politique de remboursement</Link></li>
+                        <li><Link to="/privacy-policy">Politique de confidentialité</Link></li>
+                        <li><Link to="/terms-of-service">Conditions d'utilisation</Link></li>
+                        <li><Link to="/shipping-delivery">Expédition et livraison</Link></li>
+                        
                     </ul>
                 </div>
                 

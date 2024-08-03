@@ -302,10 +302,7 @@ const Checkout = () => {
                                                     alert('Il y a eu une erreur lors de l\'approbation du paiement. Veuillez réessayer.');
                                                 });
                                             }}
-                                            onError={(error) => {
-                                                console.error('Error during PayPal process:', error);
-                                                alert('Il y a eu une erreur lors du processus PayPal. Veuillez réessayer.');
-                                            }}
+                                           
                                         />
                                     </PayPalScriptProvider>
                                 )}

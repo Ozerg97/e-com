@@ -8,6 +8,7 @@
     padding: 50px 0;
     background-size: cover; 
     background-position: center; 
+    background-attachment: fixed;
     margin-bottom: 100px;
 }
 
