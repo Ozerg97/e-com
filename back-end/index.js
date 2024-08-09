@@ -4,7 +4,7 @@ const app = express(); // create express app
 const dotenv = require("dotenv");
 dotenv.config();
 const databaseSeeder = require("./databaseSeeder");
-const userRoute = require("./routes/User");
+const userRoute = require("./routes/User1");
 const productRoute = require("./routes/Product");
 const orderRoute = require("./routes/Order");
 
