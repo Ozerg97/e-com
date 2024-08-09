@@ -27,7 +27,7 @@ export const userLoginReducer = (state = {}, action) => {
       return { loading: false, error: action.payload };
 
     case USER_RESET_MESSAGES: // Réinitialiser tous les messages
-      return { ...state, error: "", successMessage: "" };
+    return { ...state, loading: false, error: "", successMessage: "" };
     case USER_LOGOUT:
       return {};
     default:

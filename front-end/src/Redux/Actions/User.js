@@ -51,7 +51,9 @@ export const userForgotPasswordAction = (email) => async (dispatch) => {
     } catch (error) {
         dispatch({
             type: USER_FORGOT_PASSWORD_REQ_FAIL,
-            payload: data.message
+            payload: error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message,
         });
     }
 }
@@ -77,7 +79,9 @@ export const userResetPasswordAction = (email, resetString, newPassword) => asyn
     } catch (error) {
         dispatch({
             type: USER_RESET_PASSWORD_REQ_FAIL,
-            payload: data.message
+            payload: error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message
         });
     }
 }
@@ -112,7 +116,9 @@ export const userLoginAction = (email, password) => async (dispatch) => {
     } catch (error) {
         dispatch({
             type: USER_LOGIN_REQ_FAIL,
-            payload: data.message
+            payload: error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message
         });
     }
 };
@@ -149,7 +155,9 @@ export const userRegisterAction = (name, email, password) => async (dispatch) =>
     } catch (error) {
         dispatch({
             type: USER_REGISTER_REQ_FAIL,
-            payload: data.message
+            payload: error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message
         });
     }
 }
