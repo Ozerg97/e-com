@@ -10,9 +10,9 @@ function Home() {
       
       <section id="welcome">
       <div className="welcome-content">
-        <h1 id="bienvenue-h1">Bienvenue chez E-cozer</h1>
-        <p>Nous sommes une petite entreprise qui offre des produits de santé</p>
-        <Link to="/shop"><button>Visiter notre boutique</button></Link>
+        <h1 id="bienvenue-h1">Welcome to E-cozer</h1>
+        <p>We are a small company offering health products</p>
+        <Link to="/shop"><button>Visit our store</button></Link>
       </div>
 
       <div id="slider" className="mobile-only">
@@ -31,11 +31,10 @@ function Home() {
                       className="fa-check-circle"
                       aria-hidden="true"
                     />
-                    <h3>Qualité vérifiée</h3>
-                    <p>
-                      Des produits dont l'efficacité et la sécurité ont été
-                      rigoureusement testées.
-                    </p>
+                    <h3>Verified quality</h3>
+            <p>
+            Products that have been rigorously tested for efficacy and safety.
+            </p>
                   </div>
                 </div>
               </div>
@@ -47,10 +46,8 @@ function Home() {
                       className="fa-lock"
                       aria-hidden="true"
                     />
-                    <h3>Achats sécurisés</h3>
-                    <p>
-                      Cryptage avancé pour des transactions en toute sécurité.
-                    </p>
+                    <h3>Secure purchases</h3>
+                    <p>Advanced encryption for secure transactions.</p>
                   </div>
                 </div>
               </div>
@@ -62,10 +59,8 @@ function Home() {
                       className="fa-globe"
                       aria-hidden="true"
                     />
-                    <h3>Satisfaction globale</h3>
-                    <p>
-                      Des millions de clients satisfaits dans le monde entier.
-                    </p>
+                    <h3>Satisfaction guaranteed</h3>
+                    <p>Satisfied customers in Canada.</p>
                   </div>
                 </div>
               </div>
@@ -78,7 +73,7 @@ function Home() {
                       aria-hidden="true"
                     />
                     <h3>Assistance 24/7</h3>
-                    <p>Une équipe dévouée prête à vous aider à tout moment.</p>
+                    <p>A dedicated team ready to help you at any time.</p>
                   </div>
                 </div>
               </div>
@@ -100,7 +95,7 @@ function Home() {
       </div>
 
       <div className="commitment-section">
-        <h2>Votre confiance, notre engagement : L'excellence en magasin</h2>
+        <h2>Your trust, our commitment: In-store excellence</h2>
         <div className="icons">
           <div className="icon">
             <FontAwesomeIcon
@@ -108,10 +103,9 @@ function Home() {
               className="fa-check-circle"
               aria-hidden="true"
             />
-            <h3>Qualité vérifiée</h3>
+            <h3>Verified quality</h3>
             <p>
-              Des produits dont l'efficacité et la sécurité ont été
-              rigoureusement testées.
+            Products that have been rigorously tested for efficacy and safety.
             </p>
           </div>
           <div className="icon">
@@ -120,8 +114,8 @@ function Home() {
               className="fa-lock"
               aria-hidden="true"
             />
-            <h3>Achats sécurisés</h3>
-            <p>Cryptage avancé pour des transactions en toute sécurité.</p>
+            <h3>Secure purchases</h3>
+            <p>Advanced encryption for secure transactions.</p>
           </div>
           <div className="icon">
             <FontAwesomeIcon
@@ -129,8 +123,8 @@ function Home() {
               className="fa-globe"
               aria-hidden="true"
             />
-            <h3>Satisfaction globale</h3>
-            <p>Des millions de clients satisfaits dans le monde entier.</p>
+            <h3>Satisfaction guaranteed</h3>
+            <p>Satisfied customers in Canada.</p>
           </div>
           <div className="icon">
             <FontAwesomeIcon
@@ -139,7 +133,7 @@ function Home() {
               aria-hidden="true"
             />
             <h3>Assistance 24/7</h3>
-            <p>Une équipe dévouée prête à vous aider à tout moment.</p>
+            <p>A dedicated team ready to help you at any time.</p>
           </div>
         </div>
       </div>

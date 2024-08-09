@@ -84,10 +84,10 @@ const NavBar = () => {
           </Form>
         </div> */}
         <li>
-          <Link to="/" className="nav-link">Accueil</Link>
+          <Link to="/" className="nav-link">Home</Link>
         </li>
         <li>
-          <Link to="/shop" className="nav-link">Boutique</Link>
+          <Link to="/shop" className="nav-link">Shop</Link>
         </li>
 
         <li>
@@ -142,10 +142,10 @@ const NavBar = () => {
           </Form>
         </div> */}
         <li className="hideOnMobile">
-          <Link to="/" className="nav-link">Accueil</Link>
+          <Link to="/" className="nav-link">Home</Link>
         </li>
         <li className="hideOnMobile">
-          <Link to="/shop" className="nav-link">Boutique</Link>
+          <Link to="/shop" className="nav-link">Shop</Link>
         </li>
 
         <li className="hideOnMobile">

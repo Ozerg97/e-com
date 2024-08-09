@@ -7,30 +7,30 @@ function Footer() {
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-section">
-                    <h4>Informations sur l'entreprise</h4>
-                    <p>Nom de l'entreprise</p>
-                    <p>Adresse physique</p>
+                    <h4>Company information</h4>
+                    <p>E-cozer</p>
+                    <p>Canada</p>
                     <p>Téléphone: (581) 443-7426</p>
-                    <p>Email: contact@entreprise.com</p>
+                    <p>Email: support@e-cozer.com</p>
                 </div>
                 <div className="footer-section">
                     <h4>Navigation</h4>
                     <ul>
-                        <li><Link to="/">Accueil</Link></li>
-                        <li><Link to="/shop">Boutique</Link></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/shop">Shop</Link></li>
                         <li><Link to="/faq">FAQ</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
                 <div className="footer-section">
-                    <h4>Service client</h4>
+                    <h4>Policies</h4>
                     <ul>
                        
                         
-                        <li><Link to="/refund-policy">Politique de remboursement</Link></li>
-                        <li><Link to="/privacy-policy">Politique de confidentialité</Link></li>
-                        <li><Link to="/terms-of-service">Conditions d'utilisation</Link></li>
-                        <li><Link to="/shipping-delivery">Expédition et livraison</Link></li>
+                        <li><Link to="/refund-policy">Return Policy</Link></li>
+                        <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                        <li><Link to="/terms-of-service">Terms of Service</Link></li>
+                        <li><Link to="/shipping-delivery">Shipping & Delivery</Link></li>
                         
                     </ul>
                 </div>

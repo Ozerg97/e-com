@@ -35,13 +35,22 @@
 }
 
 
-.welcome-content, .commitment-section {
+.welcome-content {
     width: auto;  /* Ensure content does not stretch too wide */
     text-align: center; /* Center the text for better readability */
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 100px;
+}
+
+.commitment-section {
+    width: auto;  /* Ensure content does not stretch too wide */
+    text-align: center; /* Center the text for better readability */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 .commitment-section h2 {

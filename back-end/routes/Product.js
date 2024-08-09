@@ -21,7 +21,7 @@ productRoute.get(
       res.status(404);
       throw new Error("product not found");
     }
-  })
+  }) 
 );
 
 module.exports = productRoute;

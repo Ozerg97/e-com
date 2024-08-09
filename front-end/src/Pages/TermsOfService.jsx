@@ -1,266 +1,336 @@
 
 import './css/Tailwind.css'
 import 'flowbite'
+
+import { Link } from 'react-router-dom'
 const TermsOfService = () => {
     return (
 
         <section className="bg-white dark:bg-gray-900">
-            {/* <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-                <h2 className="mb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">Conditions d'utilisation</h2>
+            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+                <h2 className="mb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">Terms of service</h2>
                 <div className="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-1">
                     <div>
 
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                VUE D'ENSEMBLE
+                                OVERVIEW
                             </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Ce site est exploité par Speedex London LTD (CRN : 13861769), la société mère d'Othemo. Dans l'ensemble du site, les termes "nous", "notre" et "nos" font référence à Othemo. Othemo propose ce site web, y compris toutes les informations, tous les outils et tous les services disponibles sur ce site, à vous, l'utilisateur, à condition que vous acceptiez tous les termes, conditions, politiques et avis énoncés ici. <br /><br />
-
-                                En visitant notre site et/ou en achetant quelque chose chez nous, vous vous engagez dans notre "service" et acceptez d'être lié par les conditions suivantes ("conditions de service", "conditions"), y compris les conditions et politiques supplémentaires auxquelles il est fait référence dans le présent document et/ou qui sont disponibles par hyperlien. Les présentes conditions de service s'appliquent à tous les utilisateurs du site, y compris, mais sans s'y limiter, les utilisateurs qui sont des navigateurs, des vendeurs, des clients, des commerçants et/ou des contributeurs de contenu.
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">This website is operated by E-cozer. Throughout the site, the terms “we”, “us”, and “our” refer to E-cozer. E-cozer offers this website, including all information, tools, and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies, and notices stated here.
                                 <br /><br />
-                                Veuillez lire attentivement les présentes conditions d'utilisation avant d'accéder à notre site web ou de l'utiliser. En accédant à toute partie du site ou en l'utilisant, vous acceptez d'être lié par ces conditions de service. Si vous n'acceptez pas tous les termes et conditions de cet accord, vous ne pouvez pas accéder au site web ou utiliser les services. Si les présentes conditions de service sont considérées comme une offre, l'acceptation est expressément limitée aux présentes conditions de service.
+                                By visiting our site and/or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”), including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These Terms of Service apply to all users of the site, including without limitation users who are browsers, vendors, customers, merchants, and/or contributors of content.
+                                <br />
+                                Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any services. If these Terms of Service are considered an offer, acceptance is expressly limited to these Terms of Service.
                                 <br /><br />
-                                Toute nouvelle fonctionnalité ou tout nouvel outil ajouté à la boutique actuelle sera également soumis aux conditions de service. Vous pouvez consulter la version la plus récente des conditions de service à tout moment sur cette page. Nous nous réservons le droit d'actualiser, de modifier ou de remplacer toute partie des présentes conditions de service en publiant des mises à jour et/ou des modifications sur notre site web. Il vous incombe de vérifier régulièrement si des modifications ont été apportées à cette page. Le fait de continuer à utiliser le site web ou d'y accéder après la publication de modifications constitue une acceptation de ces modifications.
-                                <br /><br />
-                                Notre boutique est hébergée sur Shopify Inc. Cette société nous fournit la plateforme de commerce électronique en ligne qui nous permet de vous vendre nos produits et services.
+                                Any new features or tools which are added to the current services shall also be subject to the Terms of Service. You can review the most current version of the Terms of Service at any time on this page. We reserve the right to update, change or replace any part of these Terms of Service by posting updates and/or changes to our website. It is your responsibility to check this page periodically for changes. Your continued use of or access to the website following the posting of any changes constitutes acceptance of those changes.
+                                <br />
+                                Our website is self-hosted and developed independently, providing a unique platform that allows us to offer our products and services directly to you.
                             </p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 1 - CONDITIONS D'UTILISATION DU MAGASIN EN LIGNE
-                            </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">En acceptant les présentes conditions d'utilisation, vous déclarez que vous avez au moins l'âge de la majorité dans votre État ou province de résidence, ou que vous avez l'âge de la majorité dans votre État ou province de résidence et que vous nous avez donné votre accord pour permettre à toute personne mineure à votre charge d'utiliser ce site.
+                                SECTION 1 - ONLINE STORE TERMS                            </h3>
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence, or that
+                                you are the age of majority in your state or province of residence and you have given us your consent to allow any of your minor dependents
+                                to use this site. <br /> <br />
+                                You may not use our products for any illegal or unauthorized purpose nor may you, in the use of the Service, violate any laws in your
+                                jurisdiction (including but not limited to copyright laws). <br /><br />
+                                You must not transmit any worms or viruses or any code of a destructive nature.
                                 <br /><br />
-                                Vous ne pouvez pas utiliser nos produits à des fins illégales ou non autorisées et vous ne pouvez pas, dans l'utilisation du service, violer les lois de votre juridiction (y compris, mais sans s'y limiter, les lois sur les droits d'auteur).
-                                <br /><br />
-                                Vous ne devez pas transmettre de vers, de virus ou de code de nature destructive.
-                                <br /><br />
-                                Toute infraction ou violation de l'une des conditions entraînera la résiliation immédiate de vos services.
+                                A breach or violation of any of the Terms will result in an immediate termination of your Services.
                             </p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 2 - CONDITIONS GÉNÉRALES
-                            </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Nous nous réservons le droit de refuser le service à quiconque, pour quelque raison que ce soit et à tout moment.
+                                SECTION 2 - GENERAL CONDITIONS                            </h3>
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">We reserve the right to refuse service to anyone for any reason at any time.
                                 <br /><br />
-                                Vous comprenez que votre contenu (à l'exclusion des informations relatives aux cartes de crédit) peut être transféré de manière non cryptée et impliquer (a) des transmissions sur différents réseaux ; et (b) des modifications pour se conformer et s'adapter aux exigences techniques des réseaux ou des dispositifs de connexion. Les informations relatives aux cartes de crédit sont toujours cryptées lors de leur transfert sur les réseaux.
+                                You understand that your content (not including credit card information), may be transferred unencrypted and involve (a) transmissions over
+                                various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices. Credit card information
+                                is always encrypted during transfer over networks.
                                 <br /><br />
-                                Vous acceptez de ne pas reproduire, dupliquer, copier, vendre, revendre ou exploiter toute partie du service, l'utilisation du service ou l'accès au service ou à tout contact sur le site web à travers lequel le service est fourni, sans autorisation écrite expresse de notre part.
+                                You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or
+                                any contact on the website through which the service is provided, without express written permission by us.
                                 <br /><br />
-                                Les titres utilisés dans le présent accord ne le sont que pour des raisons de commodité et n'ont pas pour effet de limiter ou d'affecter les présentes conditions.</p>
+                                The headings used in this agreement are included for convenience only and will not limit or otherwise affect these Terms.</p>
                         </div>
 
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 3 - EXACTITUDE, INTÉGRALITÉ ET OPPORTUNITÉ DES INFORMATIONS
-
+                                SECTION 3 - ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION
                             </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Nous ne sommes pas responsables si les informations mises à disposition sur ce site ne sont pas exactes, complètes ou actuelles. Le contenu de ce site est fourni à titre d'information générale uniquement et ne doit pas être utilisé comme base unique pour prendre des décisions sans consulter des sources d'information primaires, plus précises, plus complètes ou plus opportunes. Toute utilisation du matériel de ce site se fait à vos risques et périls.
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">We are not responsible if information made available on this site is not accurate, complete or current. The material on this site is provided for
+                                general information only and should not be relied upon or used as the sole basis for making decisions without consulting primary, more
+                                accurate, more complete or more timely sources of information. Any reliance on the material on this site is at your own risk.
+                                This site may contain certain historical information. Historical information, necessarily, is not current and is provided for your reference only.
                                 <br /><br />
-                                Ce site peut contenir certaines informations historiques. Ces informations historiques ne sont pas nécessairement actuelles et sont fournies à titre de référence uniquement. Nous nous réservons le droit de modifier le contenu de ce site à tout moment, mais nous n'avons aucune obligation de mettre à jour les informations figurant sur notre site. Vous acceptez qu'il est de votre responsabilité de surveiller les modifications apportées à notre site.</p>
+                                We reserve the right to modify the contents of this site at any time, but we have no obligation to update any information on our site. You
+                                agree that it is your responsibility to monitor changes to our site.</p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 4 - MODIFICATIONS DU SERVICE ET DES PRIX
-                            </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Les prix de nos produits peuvent être modifiés sans préavis.
+                                SECTION 4 - MODIFICATIONS TO THE SERVICE AND PRICES                            </h3>
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">Prices for our products are subject to change without notice.
                                 <br /><br />
-                                Nous nous réservons le droit de modifier ou d'interrompre à tout moment le service (ou toute partie ou contenu de celui-ci) sans préavis.
+                                We reserve the right at any time to modify or discontinue the Service (or any part or content thereof) without notice at any time.
                                 <br /><br />
-                                Nous ne serons pas responsables envers vous ou envers un tiers de toute modification, changement de prix, suspension ou interruption du service.</p>
+                                We shall not be liable to you or to any third-party for any modification, price change, suspension or discontinuance of the Service.
+                            </p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 5 - PRODUITS OU SERVICES (le cas échéant)
-                            </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Certains produits ou services peuvent être disponibles exclusivement en ligne sur le site web. Ces produits ou services peuvent avoir des quantités limitées et ne peuvent être retournés ou échangés que conformément à notre politique de retour.
+                                SECTION 5 - PRODUCTS OR SERVICES (if applicable)                            </h3>
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">Certain products or Services may be available exclusively online through the website. These products or Services may have limited quantities
+                                and are subject to return or exchange only according to our <Link to="return-policy">Return Policy.</Link> 
                                 <br /><br />
-                                Nous nous sommes efforcés d'afficher le plus fidèlement possible les couleurs et les images de nos produits qui apparaissent en magasin. Nous ne pouvons pas garantir que l'affichage des couleurs sur votre écran d'ordinateur sera exact.
-                                <br /><br />
-                                Nous nous réservons le droit, sans y être obligés, de limiter les ventes de nos produits ou services à toute personne, région géographique ou juridiction. Nous pouvons exercer ce droit au cas par cas. Nous nous réservons le droit de limiter les quantités de tout produit ou service que nous offrons. Toutes les descriptions de produits ou de prix sont susceptibles d'être modifiées à tout moment sans préavis, à notre seule discrétion. Nous nous réservons le droit de supprimer tout produit à tout moment. Toute offre de produit ou de service faite sur ce site est nulle là où elle est interdite.
-                                <br /><br />
-                                Nous ne garantissons pas que la qualité des produits, services, informations ou autres éléments achetés ou obtenus par vous répondra à vos attentes, ni que les erreurs du service seront corrigées.</p>
+                                We have made every effort to display as accurately as possible the colors and images of our products that appear at the store. We cannot
+                                guarantee that your computer monitor's display of any color will be accurate.
+                                We reserve the right, but are not obligated, to limit the sales of our products or Services to any person, geographic region or jurisdiction. We
+                                may exercise this right on a case-by-case basis. We reserve the right to limit the quantities of any products or Services that we offer. All
+                                descriptions of products or product pricing are subject to change at anytime without notice, at the sole discretion of us. We reserve the right
+                                to discontinue any product at any time. Any offer for any product or service made on this site is void where prohibited.
+                                <br />
+                                <br />
+                                We do not warrant that the quality of any products, Services, information, or other material purchased or obtained by you will meet your
+                                expectations, or that any errors in the Service will be corrected.</p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 6 - EXACTITUDE DES INFORMATIONS RELATIVES À LA FACTURATION ET AU COMPTE
-
+                                SECTION 6 - ACCURACY OF BILLING AND ACCOUNT INFORMATION
                             </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Nous nous réservons le droit de refuser toute commande que vous nous passez. Nous pouvons, à notre seule discrétion, limiter ou annuler les quantités achetées par personne, par ménage ou par commande. Ces restrictions peuvent inclure des commandes passées par ou sous le même compte client, la même carte de crédit, et/ou des commandes utilisant la même adresse de facturation et/ou de livraison. En cas de modification ou d'annulation d'une commande, nous pouvons tenter de vous en informer en contactant l'adresse électronique et/ou l'adresse de facturation/le numéro de téléphone fournis au moment de la commande. Nous nous réservons le droit de limiter ou d'interdire les commandes qui, selon notre seul jugement, semblent être passées par des concessionnaires, des revendeurs ou des distributeurs.
-
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">We reserve the right to refuse any order you place with us. We may, in our sole discretion, limit or cancel quantities purchased per person, per
+                                household or per order. These restrictions may include orders placed by or under the same customer account, the same credit card, and/or
+                                orders that use the same billing and/or shipping address. In the event that we make a change to or cancel an order, we may attempt to notify
+                                you by contacting the e-mail and/or billing address/phone number provided at the time the order was made. We reserve the right to limit or
+                                prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers or distributors.
+                                <br />
+                                You agree to provide current, complete and accurate purchase and account information for all purchases made at our store. You agree to
+                                promptly update your account and other information, including your email address and credit card numbers and expiration dates, so that we
+                                can complete your transactions and contact you as needed.
                                 <br /><br />
-                                Vous acceptez de fournir des informations d'achat et de compte actuelles, complètes et exactes pour tous les achats effectués dans notre magasin. Vous acceptez de mettre à jour rapidement votre compte et d'autres informations, y compris votre adresse électronique et les numéros et dates d'expiration de votre carte de crédit, afin que nous puissions effectuer vos transactions et vous contacter si nécessaire.
-                                <br /><br />
-                                Pour plus de détails, veuillez consulter notre Politique de retour.</p>
+                                For more detail, please review our <Link to="return-policy">Return Policy.</Link> </p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 7 - OUTILS OPTIONNELS
-
+                                SECTION 7 - OPTIONAL TOOLS
                             </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Nous pouvons vous donner accès à des outils de tiers que nous ne surveillons pas et sur lesquels nous n'avons aucun contrôle ni aucune influence.
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">We may provide you with access to third-party tools over which we neither monitor nor have any control nor input.
                                 <br /><br />
-                                Vous reconnaissez et acceptez que nous fournissons l'accès à ces outils "en l'état" et "tels que disponibles" sans aucune garantie, déclaration ou condition de quelque nature que ce soit et sans aucune approbation. Nous n'assumons aucune responsabilité découlant de votre utilisation d'outils optionnels de tiers ou s'y rapportant.
+                                You acknowledge and agree that we provide access to such tools ”as is” and “as available” without any warranties, representations or
+                                conditions of any kind and without any endorsement. We shall have no liability whatsoever arising from or relating to your use of optional
+                                third-party tools.
                                 <br /><br />
-                                Toute utilisation par vous d'outils optionnels offerts par l'intermédiaire du site est entièrement à vos risques et périls et vous devez vous assurer que vous connaissez et approuvez les conditions dans lesquelles les outils sont fournis par le(s) fournisseur(s) tiers concerné(s).
+                                Any use by you of the optional tools offered through the site is entirely at your own risk and discretion and you should ensure that you are
+                                familiar with and approve of the terms on which tools are provided by the relevant third-party provider(s).
                                 <br /><br />
-                                Nous pouvons également, à l'avenir, proposer de nouveaux services et/ou de nouvelles fonctionnalités par l'intermédiaire du site web (y compris la mise à disposition de nouveaux outils et de nouvelles ressources). Ces nouvelles fonctionnalités et/ou services seront également soumis aux présentes conditions d'utilisation.
+                                We may also, in the future, offer new Services and/or features through the website (including, the release of new tools and resources). Such
+                                new features and/or Services shall also be subject to these Terms of Service.
 
                             </p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 8 - LIENS AVEC DES TIERS
-
+                                SECTION 8 - THIRD-PARTY LINKS
                             </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Certains contenus, produits et services disponibles via notre service peuvent inclure des éléments provenant de tiers.
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">Certain content, products and Services available via our Service may include materials from third-parties.
                                 <br /><br />
-                                Les liens de tiers sur ce site peuvent vous diriger vers des sites web de tiers qui ne sont pas affiliés avec nous. Nous ne sommes pas responsables de l'examen ou de l'évaluation du contenu ou de l'exactitude et nous ne garantissons pas et n'aurons aucune responsabilité pour tout matériel ou site web de tiers, ou pour tout autre matériel, produit ou service de tiers.
+                                Third-party links on this site may direct you to third-party websites that are not affiliated with us. We are not responsible for examining or
+                                evaluating the content or accuracy and we do not warrant and will not have any liability or responsibility for any third-party materials or
+                                websites, or for any other materials, products, or Services of third-parties.
                                 <br /><br />
-                                Nous ne sommes pas responsables des préjudices ou dommages liés à l'achat ou à l'utilisation de biens, de services, de ressources, de contenu ou de toute autre transaction effectuée en relation avec des sites web de tiers. Veuillez examiner attentivement les politiques et pratiques des tiers et vous assurer que vous les comprenez avant de vous engager dans une quelconque transaction. Les plaintes, réclamations, préoccupations ou questions concernant les produits de tiers doivent être adressées au tiers concerné.
+                                We are not liable for any harm or damages related to the purchase or use of goods, Services, resources, content, or any other transactions
+                                made in connection with any third-party websites. Please review carefully the third-party's policies and practices and make sure you
+                                understand them before you engage in any transaction. Complaints, claims, concerns, or questions regarding third-party products should be
+                                directed to the third-party.
 
                             </p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 9 - COMMENTAIRES DES UTILISATEURS, RETOUR D'INFORMATION ET AUTRES SOUMISSIONS
-
+                                SECTION 9 - USER COMMENTS, FEEDBACK AND OTHER SUBMISSIONS
                             </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Si, à notre demande, vous envoyez certaines soumissions spécifiques (par exemple des participations à des concours) ou si, sans que nous vous l'ayons demandé, vous envoyez des idées créatives, des suggestions, des propositions, des plans ou d'autres documents, que ce soit en ligne, par courrier électronique, par courrier postal ou autrement (collectivement, les "commentaires"), vous acceptez que nous puissions, à tout moment et sans restriction, éditer, copier, publier, distribuer, traduire et utiliser de quelque manière que ce soit, sur n'importe quel support, les commentaires que vous nous transmettez. Nous n'avons et n'aurons aucune obligation (1) de maintenir la confidentialité des commentaires, (2) de verser une compensation pour les commentaires, ou (3) de répondre aux commentaires.
-                                <br /><br />
-                                Nous pouvons, mais n'avons aucune obligation de contrôler, modifier ou supprimer le contenu que nous jugeons, à notre seule discrétion, illégal, offensant, menaçant, diffamatoire, pornographique, obscène ou autrement répréhensible, ou qui viole la propriété intellectuelle d'une partie ou les présentes conditions d'utilisation.</p>
-                            <br /><br />
-                            Vous acceptez que vos commentaires ne violent aucun droit d'un tiers, y compris les droits d'auteur, les marques, la vie privée, la personnalité ou tout autre droit personnel ou de propriété. Vous acceptez également que vos commentaires ne contiennent pas de matériel diffamatoire ou autrement illégal, abusif ou obscène, ni de virus informatique ou autre logiciel malveillant susceptible d'affecter de quelque manière que ce soit le fonctionnement du service ou de tout site web connexe. Vous ne pouvez pas utiliser une fausse adresse électronique, prétendre être quelqu'un d'autre que vous-même, ni nous induire en erreur ou induire des tiers en erreur quant à l'origine de vos commentaires. Vous êtes seul responsable des commentaires que vous faites et de leur exactitude. Nous n'assumons aucune responsabilité pour les commentaires postés par vous ou par des tiers.
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">If, at our request, you send certain specific submissions (for example contest entries) or without a request from us you send creative ideas,
+                                suggestions, proposals, plans, or other materials, whether online, by email, by postal mail, or otherwise (collectively, 'comments'), you agree
+                                that we may, at any time, without restriction, edit, copy, publish, distribute, translate and otherwise use in any medium any comments that
+                                you forward to us. We are and shall be under no obligation (1) to maintain any comments in confidence; (2) to pay compensation for any
+                                comments; or (3) to respond to any comments.
+                                <br />
+                                We may, but have no obligation to, monitor, edit or remove content that we determine in our sole discretion to be unlawful, offensive,
+                                threatening, libelous, defamatory, pornographic, obscene or otherwise objectionable or violates any party’s intellectual property or these
+                                Terms of Service. <br />
+                                You agree that your comments will not violate any right of any third-party, including copyright, trademark, privacy, personality or other
+                                personal or proprietary right. You further agree that your comments will not contain libelous or otherwise unlawful, abusive or obscene
+                                material, or contain any computer virus or other malware that could in any way affect the operation of the Service or any related website. You
+                                may not use a false e-mail address, pretend to be someone other than yourself, or otherwise mislead us or third-parties as to the origin of any
+                                comments. You are solely responsible for any comments you make and their accuracy. We take no responsibility and assume no liability for
+                                any comments posted by you or any third-party.</p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 10 - INFORMATIONS PERSONNELLES
-                            </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">L'envoi d'informations personnelles par l'intermédiaire du magasin est régi par notre politique de confidentialité. Pour consulter notre politique de confidentialité.
+                                SECTION 10 - PERSONAL INFORMATION                            </h3>
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">Your submission of personal information through the store is governed by our <Link to="privacy-policy">Privacy Policy.</Link> 
                             </p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 11 - ERREURS, INEXACTITUDES ET OMISSIONS
-
+                                SECTION 11 - ERRORS, INACCURACIES AND OMISSIONS
                             </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Il peut arriver que des informations figurant sur notre site ou dans le service contiennent des erreurs typographiques, des inexactitudes ou des omissions relatives à la description des produits, aux prix, aux promotions, aux offres, aux frais d'expédition des produits, aux délais de livraison et à la disponibilité. Nous nous réservons le droit de corriger toute erreur, inexactitude ou omission, et de modifier ou de mettre à jour les informations ou d'annuler les commandes si toute information dans le Service ou sur tout site web lié est inexacte, à tout moment et sans préavis (y compris après que vous ayez soumis votre commande).
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">Occasionally there may be information on our site or in the Service that contains typographical errors, inaccuracies or omissions that may
+                                relate to product descriptions, pricing, promotions, offers, product shipping charges, transit times and availability. We reserve the right to
+                                correct any errors, inaccuracies or omissions, and to change or update information or cancel orders if any information in the Service or on any
+                                related website is inaccurate at any time without prior notice (including after you have submitted your order).
                                 <br /><br />
-                                Nous ne sommes pas tenus de mettre à jour, de modifier ou de clarifier les informations contenues dans le service ou sur tout site web connexe, y compris, mais sans s'y limiter, les informations sur les prix, sauf si la loi l'exige. Aucune date de mise à jour ou d'actualisation spécifiée dans le service ou sur un site web connexe ne doit être considérée comme indiquant que toutes les informations contenues dans le service ou sur un site web connexe ont été modifiées ou mises à jour.</p>
+                                We undertake no obligation to update, amend or clarify information in the Service or on any related website, including without limitation,
+                                pricing information, except as required by law. No specified update or refresh date applied in the Service or on any related website, should be
+                                taken to indicate that all information in the Service or on any related website has been modified or updated.</p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 12 - USAGES INTERDITS
-
+                                SECTION 12 - PROHIBITED USES
                             </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Outre les autres interdictions énoncées dans les conditions d'utilisation, il vous est interdit d'utiliser le site ou son contenu : (a) à des fins illégales ; (b) pour solliciter d'autres personnes à accomplir ou à participer à des actes illégaux ; (c) pour violer toute réglementation, règle, loi ou ordonnance locale internationale, fédérale, provinciale ou étatique ; (d) pour enfreindre ou violer nos droits de propriété intellectuelle ou les droits de propriété intellectuelle d'autrui ; (e) pour harceler, abuser, insulter, nuire, diffamer, calomnier, dénigrer, intimider ; (e) harceler, abuser, insulter, blesser, diffamer, calomnier, dénigrer, intimider ou exercer une discrimination fondée sur le sexe, l'orientation sexuelle, la religion, l'appartenance ethnique, la race, l'âge, l'origine nationale ou le handicap ; (f) soumettre des informations fausses ou trompeuses ; (g) télécharger ou transmettre des virus ou tout autre type de code malveillant qui sera ou pourra être utilisé d'une manière qui affectera la fonctionnalité ou le fonctionnement du service ou de tout site web connexe, d'autres sites web ou de l'internet ; (h) collecter ou suivre les informations personnelles d'autrui ; (i) à des fins de spam, de phishing, de pharm, de pretext, de spider, de crawl ou de scrape ; (j) à des fins obscènes ou immorales ; ou (k) pour interférer avec ou contourner les dispositifs de sécurité du Service ou de tout site web connexe, d'autres sites web ou de l'Internet. Nous nous réservons le droit de mettre fin à votre utilisation du service ou de tout site web connexe en cas de violation de l'une des utilisations interdites.</p>
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">In addition to other prohibitions as set forth in the Terms of Service, you are prohibited from using the site or its content: <br />
+                                (a) for any unlawful purpose; (b) to solicit others to perform or participate in any unlawful acts; (c) to violate any international, federal,
+                                provincial or state regulations, rules, laws, or local ordinances; (d) to infringe upon or violate our intellectual property rights or the intellectual
+                                property rights of others; (e) to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate based on gender, sexual
+                                orientation, religion, ethnicity, race, age, national origin, or disability; (f) to submit false or misleading information; <br />
+                                (g) to upload or transmit viruses or any other type of malicious code that will or may be used in any way that will affect the functionality or
+                                operation of the Service or of any related website, other websites, or the Internet; (h) to collect or track the personal information of others; (i)
+                                to spam, phish, pharm, pretext, spider, crawl, or scrape; (j) for any obscene or immoral purpose; or (k) to interfere with or circumvent the
+                                security features of the Service or any related website, other websites, or the Internet. We reserve the right to terminate your use of the
+                                Service or any related website for violating any of the prohibited uses.</p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 13 - EXCLUSION DE GARANTIE ; LIMITATION DE RESPONSABILITÉ
-                            </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Nous ne garantissons pas que l'utilisation de notre service sera ininterrompue, opportune, sûre ou exempte d'erreurs.
+                                SECTION 13 - DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY                            </h3>
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">
 
-                                Nous ne garantissons pas que les résultats qui peuvent être obtenus par l'utilisation du service seront exacts ou fiables.
-                                <br /><br />
-                                Vous acceptez que nous puissions de temps à autre retirer le service pour une durée indéterminée ou l'annuler à tout moment, sans vous en avertir.
-                                <br /><br />
-                                Vous acceptez expressément que l'utilisation ou l'incapacité d'utiliser le service se fait à vos risques et périls. Le service et tous les produits et services qui vous sont fournis par l'intermédiaire du service sont (sauf mention expresse de notre part) fournis "en l'état" et "tels que disponibles" pour votre usage, sans aucune déclaration, garantie ou condition de quelque nature que ce soit, expresse ou implicite, y compris toutes les garanties ou conditions implicites de qualité marchande, d'adéquation à un usage particulier, de durabilité, de titre et d'absence de contrefaçon.
-                                <br /><br />
-                                En aucun cas BerryBountiful, ses administrateurs, dirigeants, employés, affiliés, agents, contractants, stagiaires, fournisseurs, prestataires de services ou concédants de licence ne peuvent être tenus responsables d'un préjudice, d'une perte, d'une réclamation ou de tout dommage direct, indirect, accessoire, punitif, spécial ou consécutif de quelque nature que ce soit, y compris, mais sans s'y limiter, les pertes de profits, de revenus, d'économies, de données, les coûts de remplacement ou tout autre dommage similaire, qu'il soit fondé sur un contrat, un délit (y compris la négligence), responsabilité stricte ou autre, découlant de votre utilisation du service ou de tout produit obtenu par le biais du service, ou pour toute autre réclamation liée de quelque manière que ce soit à votre utilisation du service ou de tout produit, y compris, mais sans s'y limiter, toute erreur ou omission dans le contenu, ou toute perte ou dommage de quelque nature que ce soit résultant de l'utilisation du service ou de tout contenu (ou produit) affiché, transmis ou rendu disponible par le biais du service, même si vous avez été averti de leur possibilité. Étant donné que certains États ou juridictions n'autorisent pas l'exclusion ou la limitation de la responsabilité pour les dommages indirects ou accessoires, dans ces États ou juridictions, notre responsabilité sera limitée dans toute la mesure permise par la loi.
-                                <br /><br />
-                                BerryBountiful ne peut être tenu responsable des blessures, décès, dommages, pertes, retards, coûts, dépenses ou désagréments résultant de l'utilisation des produits listés sur le site BerryBountiful.com.
+                                We do not guarantee, represent or warrant that your use of our service will be uninterrupted, timely, secure or error-free.
+                                <br />
+                                We do not warrant that the results that may be obtained from the use of the service will be accurate or reliable.
+                                You agree that from time to time we may remove the service for indefinite periods of time or cancel the service at any time, without notice to
+                                you.
+                                <br />
+                                You expressly agree that your use of, or inability to use, the service is at your sole risk. The service and all products and Services delivered to
+                                you through the service are (except as expressly stated by us) provided 'as is' and 'as available' for your use, without any representation,
+                                warranties or conditions of any kind, either express or implied, including all implied warranties or conditions of merchantability, merchantable
+                                quality, fitness for a particular purpose, durability, title, and non-infringement.
+                                <br />
+                                In no case shall E-cozer, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, service providers or licensors be
+                                liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, including, without
+                                limitation lost profits, lost revenue, lost savings, loss of data, replacement costs, or any similar damages, whether based in contract, tort
+                                (including negligence), strict liability or otherwise, arising from your use of any of the service or any products procured using the service, or
+                                for any other claim related in any way to your use of the service or any product, including, but not limited to, any errors or omissions in any
+                                content, or any loss or damage of any kind incurred as a result of the use of the service or any content (or product) posted, transmitted, or
+                                otherwise made available via the service, even if advised of their possibility.
+                                <br />
+                                Because some states or jurisdictions do not allow the exclusion or the limitation of liability for consequential or incidental damages, in such
+                                states or jurisdictions, our liability shall be limited to the maximum extent permitted by law.
                             </p>
 
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 14 - INDEMNISATION
-                            </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Vous acceptez d'indemniser, de défendre et de dégager de toute responsabilité BerryBountiful et nos parents, filiales, sociétés affiliées, partenaires, responsables, directeurs, agents, contractants, concédants, prestataires de services, sous-traitants, fournisseurs, stagiaires et employés, en cas de réclamation ou de demande, y compris les honoraires raisonnables d'avocat, faite par un tiers en raison de ou découlant de votre violation des présentes Conditions d'Utilisation ou des documents qu'elles incorporent par référence, ou de votre violation de toute loi ou des droits d'un tiers.</p>
+                                SECTION 14 - INDEMNIFICATION                            </h3>
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">You agree to indemnify, defend and hold harmless E-cozer and our parent, subsidiaries, affiliates, partners, officers, directors, agents,
+                                contractors, licensors, service providers, subcontractors, suppliers, interns and employees, harmless from any claim or demand, including
+                                reasonable attorneys’ fees, made by any third-party due to or arising out of your breach of these Terms of Service or the documents they
+                                incorporate by reference, or your violation of any law or the rights of a third-party.</p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 15 - DIVISIBILITÉ
-                            </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Si une disposition des présentes conditions de service est jugée illégale, nulle ou inapplicable, cette disposition sera néanmoins applicable dans toute la mesure permise par le droit applicable, et la partie inapplicable sera considérée comme dissociée des présentes conditions de service, cette décision n'affectant pas la validité et l'applicabilité des autres dispositions restantes.</p>
+                                SECTION 15 - SEVERABILITY                            </h3>
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">In the event that any provision of these Terms of Service is determined to be unlawful, void or unenforceable, such provision shall nonetheless
+                                be enforceable to the fullest extent permitted by applicable law, and the unenforceable portion shall be deemed to be severed from these
+                                Terms of Service, such determination shall not affect the validity and enforceability of any other remaining provisions.</p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 16 - RÉSILIATION
-
+                                SECTION 16 - TERMINATION
                             </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Les obligations et responsabilités des parties contractées avant la date de résiliation survivront à la résiliation du présent accord à toutes fins utiles.
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">The obligations and liabilities of the parties incurred prior to the termination date shall survive the termination of this agreement for all
+                                purposes.
                                 <br /><br />
-                                Les présentes conditions de service sont valables tant qu'elles n'ont pas été résiliées par vous ou par nous. Vous pouvez résilier les présentes conditions de service à tout moment en nous informant que vous ne souhaitez plus utiliser nos services, ou lorsque vous cessez d'utiliser notre site.
+                                These Terms of Service are effective unless and until terminated by either you or us. You may terminate these Terms of Service at any time
+                                by notifying us that you no longer wish to use our Services, or when you cease using our site.
+                                <br />
+                                If in our sole judgment you fail, or we suspect that you have failed, to comply with any term or provision of these Terms of Service, we also
+                                may terminate this agreement at any time without notice and you will remain liable for all amounts due up to and including the date of
+                                termination; and/or accordingly may deny you access to our Services (or any part thereof).</p>
+                        </div>
+                        <div className="mb-10">
+                            <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
+
+                                SECTION 17 - ENTIRE AGREEMENT                            </h3>
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">The failure of us to exercise or enforce any right or provision of these Terms of Service shall not constitute a waiver of such right or provision.
                                 <br /><br />
-                                Si nous estimons que vous ne respectez pas, ou que nous soupçonnons que vous n'avez pas respecté, l'une des conditions ou l'une des dispositions des présentes conditions de service, nous pouvons également résilier le présent accord à tout moment sans préavis et vous resterez redevable de tous les montants dus jusqu'à la date de résiliation incluse ; et/ou nous pouvons par conséquent vous refuser l'accès à nos services (ou à une partie de ceux-ci).</p>
+                                These Terms of Service and any policies or operating rules posted by us on this site or in respect to The Service constitutes the entire
+                                agreement and understanding between you and us and govern your use of the Service, superseding any prior or contemporaneous
+                                agreements, communications and proposals, whether oral or written, between you and us (including, but not limited to, any prior versions of
+                                the Terms of Service).
+                                <br />
+                                Any ambiguities in the interpretation of these Terms of Service shall not be construed against the drafting party.</p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 17 - INTÉGRALITÉ DE L'ACCORD
+                                SECTION 18 - GOVERNING LAW
                             </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Le fait que nous n'exercions pas ou n'appliquions pas un droit ou une disposition des présentes conditions d'utilisation ne constitue pas une renonciation à ce droit ou à cette disposition.
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance
+                                with the laws of Canada.</p>
+                        </div>
+                        <div className="mb-10">
+                            <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
+
+                                SECTION 19 - CHANGES TO TERMS OF SERVICE
+
+                            </h3>
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">
+                                You can review the most current version of the Terms of Service at any time at this page.
                                 <br /><br />
-                                Les présentes conditions d'utilisation et toute politique ou règle d'exploitation publiée par nous sur ce site ou concernant le service constituent l'intégralité de l'accord et de la convention entre vous et nous et régissent votre utilisation du service, remplaçant tous les accords, communications et propositions antérieurs ou contemporains, oraux ou écrits, entre vous et nous (y compris, mais sans s'y limiter, toutes les versions antérieures des conditions d'utilisation).
-                                <br /><br />
-                                Toute ambiguïté dans l'interprétation des présentes conditions de service ne doit pas être interprétée à l'encontre de la partie qui les a rédigées.c</p>
+                                We reserve the right, at our sole discretion, to update, change or replace any part of these Terms of Service by posting updates and changes
+                                to our website. It is your responsibility to check our website periodically for changes. Your continued use of or access to our website or the
+                                Service following the posting of any changes to these Terms of Service constitutes acceptance of those changes.
+                            </p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 18 - DROIT APPLICABLE
-
-                            </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Les présentes conditions de service et tout accord séparé par lequel nous vous fournissons des services sont régis et interprétés conformément aux lois du Canada.</p>
+                                SECTION 20 - CONTACT INFORMATION                            </h3>
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">
+                                Questions about the Terms of Service should be sent to us at support@ecozer.com. 
+                                
+                            </p>
                         </div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                                ARTICLE 19 - MODIFICATIONS DES CONDITIONS D'UTILISATION
+                                SECTION 21 - PRODUCT DISCLAIMER
 
                             </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Vous pouvez consulter la version la plus récente des conditions de service à tout moment sur cette page.
-                                <br /><br />
-                                Nous nous réservons le droit, à notre seule discrétion, d'actualiser, de modifier ou de remplacer toute partie des présentes conditions d'utilisation en publiant des mises à jour et des modifications sur notre site web. Il vous incombe de vérifier régulièrement si des modifications ont été apportées à notre site web. La poursuite de l'utilisation ou de l'accès à notre site web ou au service après la publication de toute modification des présentes conditions de service constitue l'acceptation de ces modifications.</p>
-                        </div>
-                        <div className="mb-10">
-                            <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
+                            <p className="text-gray-700 dark:text-gray-700 text-xl">Although we make every effort to ensure the accuracy of product information, manufacturers sometimes modify their ingredient lists. Product packaging and materials may contain more and/or different information to that shown on our website. We recommend that you do not rely solely on the information presented and that you always read the labels, warnings and instructions before using or consuming a product. For further information on a product, please contact the manufacturer. The contents of this site are provided for reference only and are not intended to replace the advice of a physician, pharmacist or other licensed healthcare professional. You should not use this information for self-diagnosis or treatment of a health problem or disease. Contact your healthcare provider immediately if you suspect you have a medical problem. Information and statements regarding dietary supplements have not been evaluated by the Food and Drug Administration and are not intended to diagnose, treat, cure or prevent any disease or health condition. E-cozer assumes no responsibility for inaccuracies or misrepresentations in products.
 
-                                ARTICLE 20 - INFORMATIONS DE CONTACT
-                            </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Les questions relatives aux conditions d'utilisation doivent nous être adressées à l'adresse suivante : support@BerryBountiful.com.</p>
-                        </div>
-                        <div className="mb-10">
-                            <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
-
-                                ARTICLE 21 - CLAUSE DE NON-RESPONSABILITÉ CONCERNANT LES PRODUITS
-
-                            </h3>
-                            <p className="text-gray-700 dark:text-gray-700 text-xl">Bien que nous nous efforcions de garantir l'exactitude des informations relatives aux produits, il arrive que les fabricants modifient leurs listes d'ingrédients. L'emballage et les matériaux des produits peuvent contenir des informations plus nombreuses et/ou différentes de celles qui figurent sur notre site web. Nous vous recommandons de ne pas vous fier uniquement aux informations présentées et de toujours lire les étiquettes, les avertissements et les instructions avant d'utiliser ou de consommer un produit. Pour de plus amples informations sur un produit, veuillez contacter le fabricant. Le contenu de ce site est fourni à titre de référence et n'est pas destiné à remplacer les conseils d'un médecin, d'un pharmacien ou d'un autre professionnel de la santé agréé. Vous ne devez pas utiliser ces informations à des fins d'autodiagnostic ou de traitement d'un problème de santé ou d'une maladie. Contactez immédiatement votre fournisseur de soins de santé si vous pensez avoir un problème médical. Les informations et les déclarations concernant les compléments alimentaires n'ont pas été évaluées par la Food and Drug Administration et ne sont pas destinées à diagnostiquer, traiter, guérir ou prévenir une maladie ou un état de santé. BerryBountiful.com n'assume aucune responsabilité en cas d'inexactitudes ou de déclarations erronées concernant les produits.</p>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </section>
 
     );

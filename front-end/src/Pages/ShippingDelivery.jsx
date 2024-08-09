@@ -5,7 +5,7 @@ const ShippingDelivery = () => {
     return (
 
         <section className="bg-white dark:bg-gray-900">
-            {/* <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                 <h2 className="mb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">Expédition & livraison</h2>
                 <div className="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-1">
                     <div>
@@ -27,7 +27,7 @@ const ShippingDelivery = () => {
                             <ul>
                                 <li className="text-gray-700 dark:text-gray-700 text-xl"><a href="https://www.17track.net/en" className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" target="_blank" rel="noreferrer">https://www.17track.net/en</a> </li>
                                 <br />
-                                <li className="text-gray-700 dark:text-gray-700 text-xl"><a href="https://www.17track.net/en" className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" target="_blank" rel="noreferrer">https://www.sf-express.com/cn/en/dynamic_function/waybill/</a> (Only for Orders shipped with the carrier S.F. Express)</li>
+                                <li className="text-gray-700 dark:text-gray-700 text-xl"><a href="https://www.sf-express.com/cn/en/dynamic_function/waybill" className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" target="_blank" rel="noreferrer">https://www.sf-express.com/cn/en/dynamic_function/waybill</a> (Only for Orders shipped with the carrier S.F. Express)</li>
                             </ul>
 
 
@@ -35,7 +35,7 @@ const ShippingDelivery = () => {
 
                     </div>
                 </div>
-            </div> */}
+            </div> 
         </section>
 
     );

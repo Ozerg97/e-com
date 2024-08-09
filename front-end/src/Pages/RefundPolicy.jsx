@@ -5,73 +5,64 @@ const RefundPolicy = () => {
   return (
 
     <section className="bg-white dark:bg-gray-900">
-      {/* <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <h2 className="mb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">Politique de remboursement</h2>
+      <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <h2 className="mb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">RETURNS</h2>
         <div className="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-1">
           <div>
             <div className="mb-10">
 
-              <p className="text-gray-700 dark:text-gray-700 text-xl">Notre principale préoccupation est de satisfaire nos clients, c'est pourquoi nous essayons d'avoir la politique de retour la plus souple possible. Si vous n'êtes pas satisfait d'une partie de votre commande, veuillez nous contacter immédiatement et nous ferons de notre mieux pour arranger les choses. Les remboursements seront effectués sur la carte de crédit ou le compte PayPal que vous avez utilisé pour passer votre commande.</p>
+              <p className="text-gray-700 dark:text-gray-700 text-xl">We have a 30-day return policy, which means you have 30 days after receiving your item to request a return. <br /><br />
+                To be eligible for a return, your item must be in the same condition that you received it, unworn or unused, with tags, and in its original
+                packaging. You'll also need the receipt or proof of purchase. <br /> <br />
+
+                To start a return, you can contact us at support@ecozer.com. Please note that returns will need to be sent to the following address:
+                7011 Rue Durocher, Montréal, QC, H3N 1Z7, Canada <br /><br />
+                If your return is accepted, we’ll send you a return shipping label, as well as instructions on how and where to send your package. Items sent
+                back to us without first requesting a return will not be accepted. Please note that if your country of residence is not Canada, shipping your
+                goods may take longer than expected. <br /><br />
+                You can always contact us for any return questions at support@ecozer.com.</p>
             </div>
             <div className="mb-10">
-             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
+              <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                Annulation
+                Damages and Issues
               </h3>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">Once you have purchased either the design, code, or both packages, you will have access to all of the future updates based on the roadmap, free of charge.</p>
+              <p className="text-gray-700 dark:text-gray-700 text-xl">Please inspect your order upon receipt and contact us immediately if the item is defective, damaged, or if you receive the wrong item, so that
+                we may evaluate the issue and make it right. <br />
+                Certain types of items cannot be returned, like perishable goods (such as food, flowers, or plants), custom products (such as special orders or
+                personalized items), and personal care goods (such as beauty products). We also do not accept returns for hazardous materials, flammable
+                liquids, or gases. Please get in touch if you have questions or concerns about your specific item. <br /><br />
+                Unfortunately, we cannot accept returns on sale items or gift cards</p>
             </div>
             <div className="mb-10">
-             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
+              <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                How does support work?
+                Exchanges
               </h3>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">We're aware of the importance of well qualified support, that is why we decided that support will only be provided by the authors that actually worked on this project.</p>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">Feel free to <a href="#" className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" target="_blank" rel="noreferrer">contact us</a> and we'll help you out as soon as we can.</p>
+              <p className="text-gray-700 dark:text-gray-700 text-xl">The fastest way to ensure you get what you want is to return the item you have, and once the return is accepted, make a separate purchase for
+                the new item. <br /><br />
+                {/* European Union 3 day cooling off period <br />
+                Notwithstanding the above, if merchandise is being shipped into the European Union, you have the right to cancel or return your order within 3
+                days for any reason and without justification. As above, your item must be in the same condition that you received it, unworn or unused, with
+                tags, and in its original packaging. You’ll also need the receipt or proof of purchase */}
+                </p>
             </div>
             <div className="mb-10">
-             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
+              <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                I want to build more than one project. Is that allowed?
+                Refunds
               </h3>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">You can use Windster for an unlimited amount of projects, whether it's a personal website, a SaaS app, or a website for a client. As long as you don't build a product that will directly compete with Windster either as a UI kit, theme, or template, it's fine.</p>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">Find out more information by <a href="#" className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">reading the license</a>.</p>
+              <p className="text-gray-700 dark:text-gray-700 text-xl">We will notify you once we’ve received and inspected your return to let you know if the refund was approved or not. If approved, you’ll be
+                automatically refunded on your original payment method within 10 business days. Please remember it can take some time for your bank or
+                credit card company to process and post the refund too. <br /><br />
+                If more than 15 business days have passed since we’ve approved your return, please contact us at support@ecozer.com.</p>
             </div>
-          
-            <div className="mb-10">
-             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                What does "free updates" include?
-              </h3>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">The free updates that will be provided is based on the <a href="#" className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">roadmap</a> that we have laid out for this project. It is also possible that we will provide extra updates outside of the roadmap as well.</p>
-            </div>
-            <div className="mb-10">
-             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                What does the free version include?
-              </h3>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">The <a href="#" className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">free version</a> of Windster includes a minimal style guidelines, component variants, and a dashboard page with the mobile version alongside it.</p>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">You can use this version for any purposes, because it is open-source under the MIT license.</p>
-            </div>
-            <div className="mb-10">
-             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
 
-                What is the difference between Windster and Tailwind UI?
-              </h3>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">Although both Windster and Tailwind UI are built for integration with Tailwind CSS, the main difference is in the design, the pages, the extra components and UI elements that Windster includes.</p>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">Additionally, Windster is a project that is still in development, and later it will include both the application, marketing, and e-commerce UI interfaces.</p>
-            </div>
-            <div className="mb-10">
-             <h3 className="flex items-center mb-4 text-3xl font-medium text-gray-900 dark:text-white">
-
-                Can I use Windster in open-source projects?
-              </h3>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">Generally, it is accepted to use Windster in open-source projects, as long as it is not a UI library, a theme, a template, a page-builder that would be considered as an alternative to Windster itself.</p>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">With that being said, feel free to use this design kit for your open-source projects.</p>
-              <p className="text-gray-700 dark:text-gray-700 text-xl">Find out more information by <a href="#" className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">reading the license</a>.</p>
-            </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
 
   );
